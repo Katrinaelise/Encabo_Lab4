@@ -1,0 +1,91 @@
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+}
+
+.cart-message {
+  background: #e6f4ea;
+  color: #1e6b34;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+
+/* Search bar: row on desktop, stacked on small screens */
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.search-bar input {
+  flex: 1 1 220px;
+}
+
+.search-bar input,
+.search-bar select,
+.search-bar button {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.search-bar button {
+  background: #1e5b3a;
+  color: #fff;
+  border-color: #1e5b3a;
+  cursor: pointer;
+}
+
+.result-count {
+  color: #555;
+  margin: 0.5rem 0 1rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #666;
+  background: #f6f6f6;
+  border-radius: 8px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.product-card .category {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.product-card .price {
+  font-weight: 600;
+}
+
+.product-card button {
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .search-bar {
+    flex-direction: column;
+  }
+  .search-bar input,
+  .search-bar select,
+  .search-bar button {
+    width: 100%;
+  }
+}
